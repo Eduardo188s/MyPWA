@@ -13,7 +13,8 @@ const urlsToCache = [
 // 2. Install - se ejecuta al instalar el SW
 self.addEventListener("install", event =>{
     event.waitUntil(
-        caches.open(CACHE_NAME).then(cache=> cache.assAll(urlsToCache))
+        caches.open(CACHE_NAME)
+        .then(cache=> cache.assAll(urlsToCache))
     );
 });
 
