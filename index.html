@@ -19,7 +19,7 @@
     <script>
         if("serviceWorker" in navigator){
             navigator.serviceWorker
-            .register('/sw.js')
+            .register('/MyPWA/sw.js')
             .then(() => console.log('service worker registrado'))
             .catch(err => console.log('service worker no registrado', err));
         }
