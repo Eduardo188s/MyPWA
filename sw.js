@@ -14,7 +14,7 @@ const urlsToCache = [
 self.addEventListener("install", event =>{
     event.waitUntil(
         caches.open(CACHE_NAME).then(cache=> cache.assAll(urlsToCache))
-    )
+    );
 });
 
 // 3. Activate - se ejecuta al activar el SSW (limpia caches viejas)
