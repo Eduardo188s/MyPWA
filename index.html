@@ -17,9 +17,9 @@
 
     <button onclick="alert('Hola desde la PWA')">Click aquí</button>
     <script>
-        if('serviceWorker' in navigator){
+        if("serviceWorker" in navigator){
             navigator.serviceWorker
-            .register('/MyPWA/sw.js')
+            .register('/sw.js')
             .then(() => console.log('service worker registrado'))
             .catch(err => console.log('service worker no registrado', err));
         }
