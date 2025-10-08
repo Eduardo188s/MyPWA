@@ -2,7 +2,7 @@
   "name": "Mi PWA de ejemplo",
   "short_name": "MIPWA",
   "start_url": "/index.html",
-  "scope": "/",
+  "scope": "/MyPWA/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0008ff",
