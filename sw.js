@@ -38,3 +38,11 @@ self.addEventListener("fetch", event => {
     })
   );
 });
+
+self.addEventListener("push", event => {
+  const data = event.data ? event.data.text() : "Notificación sin texto";
+  event.waitUntil(
+    self.registration.showNotification("Mi PWA", {
+      body: data})
+    );
+  });
